@@ -1,2 +1,134 @@
 # Auto detect text files and perform LF normalization
 * text=auto
+
+using System;
+
+namespace NumberGuessingGame
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            //Number Guessing Game for Easy level
+            
+            int RandomNumber = 9;
+            int Guess = 0;
+            int Guesses = 0;
+            int NumberofGuesses = 6;
+            bool Gameover = false;
+            string Level = "Easy";
+
+            Console.Write ("Welcome to my number guessing game, select level: ");
+            Level = Console.ReadLine();
+
+
+            while (Guess != RandomNumber && !Gameover)
+            {
+                if (Guesses < NumberofGuesses)
+                {
+                Console.Write ("Enter guess: ");
+                Guess = int.Parse(Console.ReadLine());
+                Guesses++;
+                }
+                else
+                {
+                    Gameover = true;
+                }
+                
+            }
+            if (Gameover)
+            {
+                Console.Write ("That was wrong!");
+            }
+            else
+            {
+                Console.Write ("You got it right!");
+            }
+            
+
+
+            Console.ReadLine();
+
+
+            //Number Guessing Game for Medium Level
+           
+            int RandomNumber = 16;
+            int Guess = 0;
+            int Guesses = 0;
+            int NumberofGuesses = 4;
+            bool Gameover = false;
+            string Level = "Medium";
+
+            Console.Write ("Welcome to my number guessing game, select level: ");
+            Level = Console.ReadLine();
+
+
+            while (Guess != RandomNumber && !Gameover)
+            {
+                if (Guesses < NumberofGuesses)
+                {
+                Console.Write ("Enter guess: ");
+                Guess = int.Parse(Console.ReadLine());
+                Guesses++;
+                }
+                else
+                {
+                    Gameover = true;
+                }
+                
+            }
+            if (Gameover)
+            {
+                Console.Write ("That was wrong!");
+            }
+            else
+            {
+                Console.Write ("You got it right!");
+            }
+            
+
+
+            Console.ReadLine();
+
+            //Number Guessing Game for Hard Level
+
+            int RandomNumber = 46;
+            int Guess = 0;
+            int Guesses = 0;
+            int NumberofGuesses = 3;
+            bool Gameover = false;
+            string Level = "Hard";
+
+            Console.Write ("Welcome to my number guessing game, select level: ");
+            Level = Console.ReadLine();
+
+
+            while (Guess != RandomNumber && !Gameover)
+            {
+                if (Guesses < NumberofGuesses)
+                {
+                Console.Write ("Enter guess: ");
+                Guess = int.Parse(Console.ReadLine());
+                Guesses++;
+                }
+                else
+                {
+                    Gameover = true;
+                }
+                
+            }
+            if (Gameover)
+            {
+                Console.Write ("That was wrong!");
+            }
+            else
+            {
+                Console.Write ("You got it right!");
+            }
+            
+
+
+            Console.ReadLine();
+        }
+    }
+}            
